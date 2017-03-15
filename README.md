@@ -19,19 +19,19 @@ Installation Reference: http://torch.ch/docs/getting-started.html  and https://g
 
 # Install Twitter Packages
 Please install the related Twitter packages at Distributed learning in Torch (https://blog.twitter.com/2016/distributed-learning-in-torch) before running.
-1. First, we git clone packages
-git clone https://github.com/twitter/torch-distlearn
-git clone https://github.com/twitter/torch-dataset
-git clone https://github.com/twitter/torch-thrift
-git clone https://github.com/twitter/torch-autograd
-git clone https://github.com/twitter/torch-ipc
+First we git clone packages
+1. git clone https://github.com/twitter/torch-distlearn
+2. git clone https://github.com/twitter/torch-dataset
+3. git clone https://github.com/twitter/torch-thrift
+4. git clone https://github.com/twitter/torch-autograd
+5. git clone https://github.com/twitter/torch-ipc
 
-2. Then, we can go to each folder and run commands
-luarocks install autograd
-luarocks install thrift
-luarocks install dataset
-luarocks install ipc
-luarocks install distlearn
+we can go to each folder and run commands
+1. luarocks install autograd
+2. luarocks install thrift
+3. luarocks install dataset
+4. luarocks install ipc
+5. luarocks install distlearn
 
 # Multi-GPUs
 We can test run.sh and speech.lua by modifying input and ouput.
