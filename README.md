@@ -34,3 +34,5 @@ Then, we can go to each folder and run commands
 
 # Multi-GPUs
 We can test run.sh and speech.lua by modifying input and ouput.
+
+UPDATE 15th March 2017, by Chien-Lin Huang
