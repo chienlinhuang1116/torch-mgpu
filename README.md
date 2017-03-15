@@ -18,15 +18,14 @@ export LD_LIBRARY_PATH="/home/Tools/torch_cuda-7.5/lib:/home/Tools/torch_cuda-7.
 Installation Reference: http://torch.ch/docs/getting-started.html  and https://github.com/torch/distro
 
 # Install Twitter Packages
-Please install the related Twitter packages at Distributed learning in Torch (https://blog.twitter.com/2016/distributed-learning-in-torch) before running.
-First we git clone packages
+Please install the related Twitter packages at Distributed learning in Torch (https://blog.twitter.com/2016/distributed-learning-in-torch) before running. First we git clone packages
 1. git clone https://github.com/twitter/torch-distlearn
 2. git clone https://github.com/twitter/torch-dataset
 3. git clone https://github.com/twitter/torch-thrift
 4. git clone https://github.com/twitter/torch-autograd
 5. git clone https://github.com/twitter/torch-ipc
 
-we can go to each folder and run commands
+Then, we can go to each folder and run commands
 1. luarocks install autograd
 2. luarocks install thrift
 3. luarocks install dataset
