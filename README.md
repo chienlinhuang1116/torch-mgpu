@@ -1,5 +1,5 @@
 # Install Torch7
-I compiled Torch7 by using following steps:
+Please compile Torch7 by using following steps:
 1. git clone https://github.com/torch/distro.git /home/Tools/torch_cuda-7.5 --recursive
 2. Modify path_to_nvcc=/usr/local/cuda-7.5/bin/nvcc in the file /home/Tools/torch_cuda-7.5/install.sh 
 3. Make sure the path of /usr/local/cuda-7.5 in the file ~/.bashrc
