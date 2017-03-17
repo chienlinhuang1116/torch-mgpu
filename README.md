@@ -38,12 +38,16 @@ We can test run.sh and speech.lua by modifying input and ouput.
 # Findings
 1. Before running the distributed learning, please make sure turn ACS off. Please run lspci -vvv and make sure you get "ACSCtl: SrcValid-" instead of "ACSCtl: SrcValid+" for PLX PCI-e switch. There are some information about GPU communications:
 > https://github.com/twitter/torch-ipc/issues/17
+
 > http://www.supermicro.com/support/faqs/faq.cfm?faq=20732
+
 > https://devtalk.nvidia.com/default/topic/883054/cuda-programming-and-performance/multi-gpu-peer-to-peer-access-failing-on-tesla-k80-/1
 
 2. If you get "ACSCtl: SrcValid+" for the PCI bridge: PLX Technology, run "setpci -s bus#:slot#.func# f2a.w=0000" to disable ACSCtl on the PLX switch. Please run 3 steps:
 > lspci | grep -i plx ,  …check bus#:slot#.func#
+
 > sudo lspci -s 03:08.0 -vvvv | grep -i acs ,  …check ACSCtl: SrcValid+
+
 > sudo setpci -s 03:08.0 f2a.w=0000 ,  …make ACSCtl: SrcValid-
 
 3. We can check the setting of GPU cards and their topo matrix using the command of "nvidia-smi topo --matrix".
@@ -58,5 +62,4 @@ We can test run.sh and speech.lua by modifying input and ouput.
 5. Yu & Deng’s "Automatic Speech Recognition, A Deep Learning Approach"
 
 
-UPDATE 16th March 2017, by Chien-Lin Huang 
-https://sites.google.com/site/chiccoclhuang/
+UPDATE 16th March 2017, by Chien-Lin Huang https://sites.google.com/site/chiccoclhuang/
