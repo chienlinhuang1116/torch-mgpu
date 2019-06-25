@@ -1,3 +1,5 @@
+EXPLORING LEARNING STRATEGIES FOR TRAINING DEEP NEURAL NETWORKS USING MULTIPLE GPUS
+
 # Install Torch7
 Please compile Torch7 by using following steps:
 1. git clone https://github.com/torch/distro.git /home/Tools/torch_cuda-7.5 --recursive
@@ -14,7 +16,6 @@ Then running
 export PATH="/home/Tools/torch_cuda-7.5:/home/Tools/torch_cuda-7.5/bin:/home/Tools/torch_cuda-7.5/install:/home/Tools/torch_cuda-7.5/install/bin:/home/Tools/torch_cuda-7.5/install/share/lua/5.1:$PATH"
 export LD_LIBRARY_PATH="/home/Tools/torch_cuda-7.5/lib:/home/Tools/torch_cuda-7.5/install/lib/lua/5.1:/home/Tools/torch_cuda-7.5/install/lib:$LD_LIBRARY_PATH"
 . /home/Tools/torch_cuda-7.5/install/bin/torch-activate
-
 
 Installation Reference: http://torch.ch/docs/getting-started.html  and https://github.com/torch/distro
 
