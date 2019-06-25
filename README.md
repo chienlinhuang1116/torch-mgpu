@@ -15,6 +15,7 @@ export PATH="/home/Tools/torch_cuda-7.5:/home/Tools/torch_cuda-7.5/bin:/home/Too
 export LD_LIBRARY_PATH="/home/Tools/torch_cuda-7.5/lib:/home/Tools/torch_cuda-7.5/install/lib/lua/5.1:/home/Tools/torch_cuda-7.5/install/lib:$LD_LIBRARY_PATH"
 . /home/Tools/torch_cuda-7.5/install/bin/torch-activate
 
+
 Installation Reference: http://torch.ch/docs/getting-started.html  and https://github.com/torch/distro
 
 # Install Twitter Packages
@@ -44,11 +45,11 @@ We can test run.sh and speech.lua by modifying input and ouput.
 > https://devtalk.nvidia.com/default/topic/883054/cuda-programming-and-performance/multi-gpu-peer-to-peer-access-failing-on-tesla-k80-/1
 
 2. If you get "ACSCtl: SrcValid+" for the PCI bridge: PLX Technology, run "setpci -s bus#:slot#.func# f2a.w=0000" to disable ACSCtl on the PLX switch. Please run 3 steps:
-> lspci | grep -i plx ,  …check bus#:slot#.func#
+> lspci | grep -i plx ,  â€¦check bus#:slot#.func#
 
-> sudo lspci -s 03:08.0 -vvvv | grep -i acs ,  …check ACSCtl: SrcValid+
+> sudo lspci -s 03:08.0 -vvvv | grep -i acs ,  â€¦check ACSCtl: SrcValid+
 
-> sudo setpci -s 03:08.0 f2a.w=0000 ,  …make ACSCtl: SrcValid-
+> sudo setpci -s 03:08.0 f2a.w=0000 ,  â€¦make ACSCtl: SrcValid-
 
 3. We can check the setting of GPU cards and their topo matrix using the command of "nvidia-smi topo --matrix".
 4. The activation function of Relu is better than Tanh. But, ReLu may fall into 0% accuracy with the unsuitable learning rate. There is no such problem when using Tanh.
@@ -59,7 +60,7 @@ We can test run.sh and speech.lua by modifying input and ouput.
 2. Amazon: http://www.nikkostrom.com/publications/interspeech2015/strom_interspeech2015.pdf
 3. Dougal Maclaurin, David Duvenaud, Matt Johnson, "Autograd: Reverse-mode differentiation of native Python"
 4. Twitter: https://blog.twitter.com/2016/distributed-learning-in-torch
-5. Yu & Deng’s "Automatic Speech Recognition, A Deep Learning Approach"
+5. Yu & Dengâ€™s "Automatic Speech Recognition, A Deep Learning Approach"
 
 
 UPDATE 16th March 2017, by Chien-Lin Huang https://sites.google.com/site/chiccoclhuang/
