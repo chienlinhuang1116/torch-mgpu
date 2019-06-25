@@ -8,7 +8,7 @@ Train a CNN classifier on CIFAR-10 using AllReduceSGD.
    --gpu               (default 1)         which gpu to use (only when using cuda)
 ]]
 
--- Requires
+-- Required
 if opt.cuda then
    require 'cutorch'
    require 'cunn'
