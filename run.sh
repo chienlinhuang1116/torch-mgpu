@@ -1,3 +1,4 @@
+# The main program
 #!/usr/bin/env bash
 export CUDA_VISIBLE_DEVICES=2,3,4,5,6,7
 echo $CUDA_VISIBLE_DEVICES
